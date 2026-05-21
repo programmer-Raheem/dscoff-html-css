@@ -101,7 +101,7 @@ You only need a modern web browser (e.g., Chrome, Edge, Safari, Firefox) and a l
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/dscoff-racing.git
+    git clone https://github.com/programmer-Raheem/dscoff-racing.git
     cd dscoff-racing
     ```
 
