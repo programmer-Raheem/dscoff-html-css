@@ -140,7 +140,7 @@ You only need a modern web browser (e.g., Chrome, Edge, Safari, Firefox) and a l
 
 Get in the driver's seat and join our rapidly growing racing community:
 
-*   🌐 **Official Website:** [DSCOFF Racing](https://dscoffracing.com)
+*   🌐 **Official Website:** [DSCOFF Racing](https://dscoff.racing/)
 *   ✈️ **Telegram Community:** [@dscoffracing](https://t.me/dscoffracing)
 *   🎮 **Discord server:** [DSCOFF Racing Discord](#)
 *   🐦 **Twitter/X:** [@DSCOFFRacing](#)
