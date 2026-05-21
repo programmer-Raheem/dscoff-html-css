@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSCOFF Racing | Where Adrenaline and Asphalt Meet</title>
+
+    <!-- Google Fonts Link (Inter for body copy, Orbitron & Syncopate for wide athletic headers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Orbitron:wght@400;600;800;900&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick Carousel Style CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+
+    <!-- Local Bootstrap 5 Style -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Local FontAwesome Style -->
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+
+    <!-- Local Custom Styling -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Main Wrapper division matching Medmatcher wrapper -->
+    <div class="wrapper-div" id="wrapper">
+
+        <!-- Navigation Header (Sporty Slanted Navbar) -->
+        <header class="header" id="header">
+            <div class="header-navigation-wrapper">
+                <!-- Left brand logo block utilizing the local logo.svg -->
+                <a href="#" class="brand-logo">
+                    <img src="./assets/images/logo.svg" alt="DSCOFF RACING Logo">
+                </a>
+
+                <!-- Right slanted navigation container -->
+                <div class="navbar-right-container">
+                    <!-- The half-nav yellow background image -->
+                    <img src="./assets/images/half-nav.svg" alt="Half Nav" class="navbar-yellow-bg">
+
+                    <!-- The navigation links, absolute on top of the background -->
+                    <nav class="nav" id="nav-main">
+                        <ul class="navigation">
+                            <li class="nav-item">
+                                <a href="#giveaway">GIVEAWAY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#team">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#roadmap">ROADMAP</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header> 
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <!-- Background Video (Autoplay, Muteless Loop with Poster Fallback) -->
+            <video autoplay loop muted playsinline preload="auto" class="hero-background-video">
+                <source src="https://res.cloudinary.com/dgstbxgwt/video/upload/v1737400644/banner-video_anaykr.mp4"
+                    type="video/mp4">
+            </video>
+            <!-- Overlay to darken video slightly and enhance text visibility -->
+            <div class="hero-video-overlay"></div>
+
+            <div class="container hero-container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10 col-md-12 col-sm-12">
+                        <div class="hero-content">
+                            <!-- Main sporty greetings with color #D2D3D4 -->
+                            <h2 class="hero-welcome">WELCOME TO</h2>
+
+                            <!-- Central DSCOFF Racing Brand Badge utilizing logo-hero.svg -->
+                            <div class="hero-logo-box">
+                                <img src="./assets/images/logo-hero.svg" alt="DSCOFF RACING" class="hero-logo-img">
+                            </div>
+
+                            <!-- Wide italic sub-heading with Font: Race Sport replica -->
+                            <h3 class="hero-subtitle">
+                                WHERE <span>ADRENALINE</span> AND <span>ASPHALT</span> MEET
+                            </h3>
+
+                            <!-- Paragraph text with specific italic weights -->
+                            <p class="hero-desc">
+                                Ready for the race of a lifetime? <em>DSCOFF</em> awaits – download, <span>drive and
+                                    earn $DSC</span>
+                            </p>
+
+                            <!-- Double Action Download Badges utilizing local SVG files -->
+                            <div class="hero-download-buttons">
+                                <!-- App Store Download -->
+                                <a href="#" class="download-badge-link">
+                                    <img src="./assets/images/apple-badge-cta-en.svg.svg"
+                                        alt="Download on the App Store">
+                                </a>
+
+                                <!-- Google Play Download -->
+                                <a href="#" class="download-badge-link">
+                                    <img src="./assets/images/google-badge-cta-en.svg fill.svg"
+                                        alt="GET IT ON Google Play">
+                                </a>
+                            </div>
+
+                            <!-- Footer italic date text -->
+                            <p class="hero-date-text">
+                                Will be available <span class="hero-date-label-desktop">Q3 2026</span> <span
+                                    class="hero-date-label-mobile">January 1 in 2025</span>
+                            </p>
+
+                            <!-- Triple animated chevron scroll indicators utilizing local arrow.svg -->
+                            <div class="scroll-arrow-box">
+                                <a href="#details" class="scroll-arrow">
+                                    <img src="./assets/images/arrow.svg" alt="Scroll Down">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ribbon & YouTube Video Section (Combined height matching Hero Section 865px) -->
+        <section class="ribbon-video-section" id="giveaway">
+
+            <!-- Crossing Slanted Giveaway Ribbons Section -->
+            <div class="giveaway-ribbon-section">
+                <!-- Yellow Ribbon: Stationary, Slants Upwards, with Pulsing Text (Exactly 8 spans) -->
+                <div class="ribbon-yellow">
+                    <div class="ribbon-static-track">
+                        <span>WIN!</span><span>WIN!</span><span>WIN!</span><span>WIN!</span>
+                        <span>WIN!</span><span>WIN!</span><span>WIN!</span><span>WIN!</span>
+                    </div>
+                </div>
+
+                <!-- Dark Slate-Teal Ribbon: Slants Downwards, Slick Slider Marquee -->
+                <div class="ribbon-dark">
+                    <div class="ribbon-slider">
+                        <div class="ribbon-item">
+                            <img src="./assets/images/logo.svg" alt="DSCOFF Logo" class="ribbon-logo">
+                        </div>
+                        <div class="ribbon-item">
+                            <span class="ribbon-text">GIVAWAYS</span>
+                        </div>
+                        <div class="ribbon-item">
+                            <img src="./assets/images/logo.svg" alt="DSCOFF Logo" class="ribbon-logo">
+                        </div>
+                        <div class="ribbon-item">
+                            <span class="ribbon-text">GIVAWAYS</span>
+                        </div>
+                        <div class="ribbon-item">
+                            <img src="./assets/images/logo.svg" alt="DSCOFF Logo" class="ribbon-logo">
+                        </div>
+                        <div class="ribbon-item">
+                            <span class="ribbon-text">GIVAWAYS</span>
+                        </div>
+                        <div class="ribbon-item">
+                            <img src="./assets/images/logo.svg" alt="DSCOFF Logo" class="ribbon-logo">
+                        </div>
+                        <div class="ribbon-item">
+                            <span class="ribbon-text">GIVAWAYS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Video Embed Container -->
+            <div class="video-content-container">
+                <div class="video-wrapper">
+                    <iframe width="100%" height="100%"
+                        src="https://www.youtube.com/embed/pE2noJMpJLY?rel=0&modestbranding=1&playsinline=1"
+                        title="DSCOFF Racing Video" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- New Giveaways Graphic & Telegram Section -->
+        <section class="giveaways-promo-section" id="giveaways-promo">
+            <!-- Top Header Row overlay -->
+            <div class="giveaways-promo-header">
+                <h2 class="giveaways-promo-title">GIVAWAYS</h2>
+                <img src="./assets/images/half-nav.svg" alt="Half Nav" class="giveaways-promo-yellow-bg">
+            </div>
+
+            <div class="giveaways-promo-content">
+                <!-- Background Image -->
+                <img src="./assets/images/tetegram-link.svg" alt="DSCOFF Giveaways Promotion"
+                    class="giveaways-promo-bg">
+
+                <!-- Telegram Button Link -->
+                <a href="https://t.me/dscoffracing" target="_blank" rel="noopener noreferrer" class="telegram-btn-link">
+                    <img src="./assets/images/telegram-button.svg" alt="Go to Telegram">
+                </a>
+            </div>
+        </section>
+
+        <!-- Game Modes Section -->
+        <section class="game-modes-section" id="game-modes">
+            <!-- Top Header Row -->
+            <div class="game-modes-header">
+                <h2 class="game-modes-title">GAME MODES</h2>
+                <img src="./assets/images/half-nav.svg" alt="Half Nav" class="game-modes-yellow-bg">
+            </div>
+
+            <!-- Slider Container -->
+            <div class="game-modes-slider-wrapper">
+                <div class="game-modes-slider">
+                    <!-- Circuit Racing -->
+                    <div class="game-mode-slide">
+                        <div class="game-mode-item">
+                            <img src="./assets/images/circuit-racing.svg" alt="Circuit Racing">
+                            <div class="game-mode-overlay"></div>
+                            <div class="game-mode-text-wrapper">
+                                <h3 class="game-mode-text">
+                                    <span class="text-yellow">CIRCUIT</span> <span class="text-white">RACING</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Drift Racing -->
+                    <div class="game-mode-slide">
+                        <div class="game-mode-item">
+                            <img src="./assets/images/drift-racing.svg" alt="Drift Racing">
+                            <div class="game-mode-overlay"></div>
+                            <div class="game-mode-text-wrapper">
+                                <h3 class="game-mode-text">
+                                    <span class="text-yellow">DRIFT</span> <span class="text-white">RACING</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Highway Racing -->
+                    <div class="game-mode-slide">
+                        <div class="game-mode-item">
+                            <img src="./assets/images/highway-racing.svg" alt="Highway Racing">
+                            <div class="game-mode-overlay"></div>
+                            <div class="game-mode-text-wrapper">
+                                <h3 class="game-mode-text">
+                                    <span class="text-yellow">HIGHWAY</span> <span class="text-white">RACING</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Drag Racing -->
+                    <div class="game-mode-slide">
+                        <div class="game-mode-item">
+                            <img src="./assets/images/orag-racing.svg" alt="Drag Racing">
+                            <div class="game-mode-overlay"></div>
+                            <div class="game-mode-text-wrapper">
+                                <h3 class="game-mode-text">
+                                    <span class="text-yellow">DRAG</span> <span class="text-white">RACING</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sprint Racing -->
+                    <div class="game-mode-slide">
+                        <div class="game-mode-item">
+                            <img src="./assets/images/sprint-racing.svg" alt="Sprint Racing">
+                            <div class="game-mode-overlay"></div>
+                            <div class="game-mode-text-wrapper">
+                                <h3 class="game-mode-text">
+                                    <span class="text-yellow">SPRINT</span> <span class="text-white">RACING</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vehicle Modes Section -->
+        <section class="vehicle-modes-section" id="vehicle-modes">
+            <!-- Top Header Row -->
+            <div class="vehicle-modes-header">
+                <h2 class="vehicle-modes-title">VEHICLE MODES</h2>
+                <img src="./assets/images/half-nav.svg" alt="Half Nav" class="vehicle-modes-yellow-bg">
+            </div>
+
+            <!-- Vehicles Container -->
+            <div class="vehicle-modes-wrapper">
+                <div class="vehicles-row">
+                    <!-- Basic -->
+                    <div class="vehicle-item-wrapper">
+                        <div class="vehicle-mode-item">
+                            <img src="./assets/images/basic-1.svg" alt="Basic">
+                            <div class="vehicle-mode-overlay"></div>
+                        </div>
+                        <div class="vehicle-mode-text-wrapper">
+                            <h3 class="vehicle-mode-text">
+                                <span class="text-yellow">BASIC</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Premium -->
+                    <div class="vehicle-item-wrapper">
+                        <div class="vehicle-mode-item">
+                            <img src="./assets/images/prenium-2.svg" alt="Premium">
+                            <div class="vehicle-mode-overlay"></div>
+                        </div>
+                        <div class="vehicle-mode-text-wrapper">
+                            <h3 class="vehicle-mode-text">
+                                <span class="text-yellow">PREMIUM</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Sport -->
+                    <div class="vehicle-item-wrapper">
+                        <div class="vehicle-mode-item">
+                            <img src="./assets/images/sport-3.svg" alt="Sport">
+                            <div class="vehicle-mode-overlay"></div>
+                        </div>
+                        <div class="vehicle-mode-text-wrapper">
+                            <h3 class="vehicle-mode-text">
+                                <span class="text-yellow">SPORT</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Super Sport -->
+                    <div class="vehicle-item-wrapper">
+                        <div class="vehicle-mode-item">
+                            <img src="./assets/images/sport-5.svg" alt="Super Sport">
+                            <div class="vehicle-mode-overlay"></div>
+                        </div>
+                        <div class="vehicle-mode-text-wrapper">
+                            <h3 class="vehicle-mode-text">
+                                <span class="text-yellow">SUPER SPORT</span>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <!-- Top Header Row -->
+            <div class="team-header">
+                <h2 class="team-title">TEAM</h2>
+                <img src="./assets/images/half-nav.svg" alt="Half Nav" class="team-yellow-bg">
+            </div>
+
+            <!-- Team Content Container -->
+            <div class="team-wrapper">
+                <div class="team-row">
+                    <!-- Member 1: Yuri -->
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1764881467/photo_2025-12-05_01-43-18_do3mzi.jpg"
+                                alt="Yuri">
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">YURI</h3>
+                            <p class="team-member-role">FOUNDER</p>
+                        </div>
+                    </div>
+                    <!-- Member 2: Georgy -->
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1763550179/Gregory_ugndam.png"
+                                alt="Georgy">
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">GEORGY</h3>
+                            <p class="team-member-role">GAME DEVELOPER</p>
+                        </div>
+                    </div>
+                    <!-- Member 3: Alex -->
+                    <div class="team-member">
+                        <div class="team-member-photo">
+                            <img src="https://res.cloudinary.com/dgstbxgwt/image/upload/v1763550203/Shchekin_Photo_nkrhwi.png"
+                                alt="Alex">
+                        </div>
+                        <div class="team-member-info">
+                            <h3 class="team-member-name">ALEX</h3>
+                            <p class="team-member-role">TECHNICAL ARTIST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section class="roadmap-section" id="roadmap">
+            <!-- Top Header Row -->
+            <div class="roadmap-header">
+                <h2 class="roadmap-title">ROADMAP</h2>
+                <img src="./assets/images/half-nav.svg" alt="Half Nav" class="roadmap-yellow-bg">
+            </div>
+
+            <!-- Roadmap Content -->
+            <div class="roadmap-wrapper">
+                <h3 class="roadmap-story-title">DSCOFF STORY</h3>
+
+                <div class="roadmap-timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-highlight">MAY</span> 2026
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-desc">
+                            SINGLE PLAYER ALPHA VERSION
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-highlight">SEPTEMBER</span> 2026
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-desc">
+                            SINGLE PLAYER BETA VERSION (BUG FIXING)
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-highlight">NOVEMBER</span> 2026
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-desc">
+                            OFFICIAL RELEASE V1.0.0
+                        </div>
+                    </div>
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">
+                            <span class="date-highlight">MARCH</span> 2027
+                        </div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-desc">
+                            CAREER MODE RELEASE AND MULTIPLAYER|OPENMAP BETA TESTING
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top-row">
+            <!-- Left Column: Logo + Yellow Links -->
+            <div class="footer-left-col">
+                <a href="#" class="footer-logo">
+                    <img src="./assets/images/logo.svg" alt="DSCOFF RACING Logo">
+                </a>
+                <div class="footer-yellow-links">
+                    <a href="#" class="footer-link-yellow">DSCOFF WIKI</a>
+                    <a href="#" class="footer-link-yellow">MARKETPLICE</a>
+                </div>
+            </div>
+
+            <!-- Middle Column: Grey Links -->
+            <div class="footer-middle-col">
+                <a href="#" class="footer-link-grey">GIVEAWAY</a>
+                <a href="#team" class="footer-link-grey">TEAM</a>
+                <a href="#roadmap" class="footer-link-grey">ROADMAP</a>
+            </div>
+
+            <!-- Right Column: Stay Connected & Get in the Driver's Seat -->
+            <div class="footer-right-col">
+                <div class="footer-connect-section">
+                    <h3 class="footer-accent-heading">STAY CONNECTED</h3>
+                    <div class="social-icons-wrapper">
+                        <a href="#" class="social-icon-link"><img src="./assets/images/twitter-icon.svg" alt="Twitter"
+                                class="social-icon"></a>
+                        <a href="#" class="social-icon-link"><img src="./assets/images/game-icon.svg" alt="Discord"
+                                class="social-icon"></a>
+                        <a href="#" class="social-icon-link"><img src="./assets/images/telegram-icon.svg" alt="Telegram"
+                                class="social-icon"></a>
+                        <a href="#" class="social-icon-link"><img src="./assets/images/instagram-icon.svg"
+                                alt="Instagram" class="social-icon"></a>
+                        <a href="#" class="social-icon-link"><img src="./assets/images/youtube-icon.svg" alt="YouTube"
+                                class="social-icon"></a>
+                        <a href="#" class="social-icon-link"><img src="./assets/images/tiktok-icon.svg" alt="TikTok"
+                                class="social-icon"></a>
+                    </div>
+                </div>
+
+                <div class="footer-download-section">
+                    <h3 class="footer-accent-heading">GET IN THE DRIVER’S SEAT</h3>
+                    <div class="store-buttons">
+                        <img src="./assets/images/apple-badge-cta-en.svg.svg" alt="Download on the App Store"
+                            class="store-badge">
+                        <img src="./assets/images/google-badge-cta-en.svg fill.svg" alt="Get it on Google Play"
+                            class="store-badge">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Footer Bottom Links & Copyright (inside footer-container) -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Legal & Privacy</a>
+                    <a href="#" class="footer-bottom-link">User Agreement</a>
+                    <a href="#" class="footer-bottom-link">Privacy & Cookie Policy</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2026 DSCOFF Inc.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts Stack (Clean loading sequence) -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
